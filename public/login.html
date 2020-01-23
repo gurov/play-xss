@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Pavel Gurov">
+    <title>Login</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" -->
+        <!-- integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/augmented-ui/augmented.css">
+    <!-- Favicons -->
+    <meta name="theme-color" content="#49FF18">
+
+
+    <style>
+        body {
+            color: #FFFFFF;
+            text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+            color: #FFFFFF;
+            background-color: #232323;
+            font-size: 18px;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+            font-weight: normal;
+            text-decoration: none;
+            font-style: normal;
+            font-variant: normal;
+        }
+       .test {
+
+        }
+        input, textarea {
+            background-color: #232323;
+            color: #49FF18;
+        }
+
+
+    </style>
+</head>
+
+<body class="container">
+    <form class="test" action="/login" method="post">
+        <h1>Login to <sub>PLAY XSS</sub></h1>
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" class="form-control" required
+                autofocus>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" class="form-control" required>
+        </div>
+        <div>
+            <input class="btn btn-lg btn-primary btn-block" type="submit" value="Log In" />
+        </div>  
+        <hr>      
+        <div>
+            Sign up <a href="/signup">here</a>
+        </div>
+    </form>
+
+
+
+</body>
+
+</html>

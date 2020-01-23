@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Pavel Gurov">
+    <title>SignUp</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" -->
+        <!-- integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/augmented-ui/augmented.css">
+    <!-- Favicons -->
+    <meta name="theme-color" content="#49FF18">
+
+
+    <style>
+        body {
+            text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+            background-color: #232323;
+
+            font-family: "Lucida Console", Monaco, monospace;
+            font-size: 18px;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+            color: black;
+            font-weight: normal;
+            text-decoration: none;
+            font-style: normal;
+            font-variant: normal;
+
+        }
+        sup a {
+            color: maroon;
+            font-size: 14px;
+        }
+        li {
+            color:maroon;
+        }
+       .test {
+
+        }
+        input, textarea {
+            background-color: #232323;
+            color: #49FF18;
+        }
+
+
+    </style>
+</head>
+
+<body class="container">
+    <form class="test" action="/dashboard" method="post">
+        <h1>PLAY XSS Dashboard<sup><a href="/logout">[Log Out]</a></sup></h1>
+        
+        <hr>
+        <div>
+            <label>Text:</label><br>
+            <textarea name="text"></textarea>
+        </div>
+        <div>
+            <input class="btn btn-primary" type="submit" value="Send note"/>
+        </div>  
+    </form>
+<hr>
+<ul>ttt</ul>
+
+
+</body>
+
+</html>

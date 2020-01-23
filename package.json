@@ -1,0 +1,22 @@
+{
+  "name": "play-xss",
+  "version": "1.0.0",
+  "description": "playground for testing xss",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Pavel Gurov",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.7",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "morgan": "^1.9.1",
+    "sequelize": "^5.21.3",
+    "sqlite3": "^4.1.1"
+  }
+}
